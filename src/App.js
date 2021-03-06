@@ -11,9 +11,6 @@ function makeid() {
    return text;
 }
 
-const Block = (props) => {
-   const { id } = props;
-};
 const rand = () => {
    return Math.floor(Math.random() * 10);
 };
@@ -45,7 +42,9 @@ const diff = () => {
 
 function App() {
    let t = diff();
-   return <div>{t.map((o) => o)}</div>;
+   return (
+      <div style={{ paddingLeft: 100, paddingTop: 130 }}>{t.map((o) => o)}</div>
+   );
 }
 
 export default App;
