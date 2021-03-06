@@ -32,7 +32,7 @@ const diff = () => {
                width: 50,
                border: "1px solid #333",
                margin: 3,
-               backgroundColor: "#f" + rand() + rand(),
+               backgroundColor: "#" + rand() + rand() + "F",
             }}
          >
             {id}
