@@ -43,7 +43,9 @@ const diff = () => {
 function App() {
    let t = diff();
    return (
-      <div style={{ paddingLeft: 100, paddingTop: 130 }}>{t.map((o) => o)}</div>
+      <div style={{ paddingLeft: 100, paddingTop: 130, position: "relative" }}>
+         {t.map((o) => o)}
+      </div>
    );
 }
 
