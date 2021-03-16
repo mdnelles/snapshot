@@ -43,9 +43,14 @@ const diff = () => {
 function Colors() {
    let t = diff();
    return (
-      <div style={{ paddingLeft: 100, paddingTop: 130, position: "relative" }}>
-         {t.map((o) => o)}
-      </div>
+      <>
+         <div
+            style={{ paddingLeft: 100, paddingTop: 130, position: "relative" }}
+         >
+            {t.map((o) => o)}
+         </div>
+         <a href="/snap">Snap</a>
+      </>
    );
 }
 
